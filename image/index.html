@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8"/>
+   <title>中智信元</title>
+   <style type="text/css">
+     *{
+      padding: 0;
+      margin: 0;
+     }
+     ul,li,ol{
+      list-style: none;
+     }
+     a{
+      text-decoration: none;
+     }
+     .header{
+      height: 171px;
+      background-color: #eeeeef;
+      overflow: hidden;
+     }
+     .logo{
+      text-align: center;
+      margin-top: 30px;
+      height: 95px;
+     }
+     .nav{
+      width: 670px;
+      height: 45px;
+      background-color: #fff;
+      margin:0px auto;
+      border-radius: 22.5px;
+     }
+     .nav li{
+      float: left;
+      padding: 0 30px;
+      line-height: 45px;
+      height: 45px;
+      background: url(./shuxian.png) no-repeat right;
+     }
+     .nav .wushuxian{
+      background: none;
+     }
+     .nav li a{
+      display: block;
+      height: 42px;
+      font-size: 14px;
+     }
+     .nav li a:hover{
+      border-bottom: 3px solid #1e50ae;
+     }
+     .banner{
+      height: 468px;
+      background: url(./banner.png) no-repeat top center;
+     }
+     .fuwuxiangmu{
+      height: 749px;
+      text-align: center;
+     }
+     p{
+      font-size: 34px;
+      margin-bottom: 22px;
+     }
+     .fuwuneirong{
+      height: 588px;
+     }
+     .tupian{
+      height: 168px;
+      width: 1250px;
+      margin: 0px auto;
+      padding-top: 45px;
+     }
+     .wenzi{
+      height: 46px;
+      width: 1232px;
+      margin: 0px auto;
+     }
+     .wenzi li{
+      height: 46px;
+      float: left;
+      width: 308px;
+      line-height: 46px;
+      text-align: center;
+     }
+     .wenzitwo{
+      height: 163px;
+      width: 924px;
+      margin: 0px 0px 0px 257px;
+      float: left;
+     }
+     .wenzitwo ul{
+      float: left;
+      height: 163px;
+      width: 308px;
+      text-align: left;
+     }
+     .wenzitwo ul li{
+      font-size: 14px;
+      color: #c8c8c8;
+      line-height: 26px;
+     }
+     .wenzitwo ul li img{
+      margin-right: 5px;
+     }
+     .yuandian{
+      width: 10px;
+      height: 163px;
+      float: left;
+    }
+    .tupiantwo{
+      width: 1200px;
+      height: 166px;
+      margin: 0px auto;
+    }
+    .wenzithree{
+      height: 26px;
+      width: 1232px;
+      margin: 0px auto;
+     }
+    .wenzithree li{
+      height: 26px;
+      float: left;
+      width: 308px;
+      line-height: 20px;
+      text-align: center;
+     }
+     .lansebeijing{
+      height: 712px;
+      background: url(./lansebeijing.png) no-repeat center center;
+      text-align: center;
+     }
+     .ptwo{
+      font-size: 34px;
+      margin-bottom: 22px;
+      color: #fff;
+      padding-top: 65px;
+     }
+     .blueneirong{
+      width: 1200px;
+      height: 297px;
+      padding-top: 71px;
+      margin: 0px auto 75px;
+     }
+     .blueneirong li{
+      float: left;
+      height: 297px;
+      line-height: 297px;
+     }
+     .zuojiantou{
+      width: 60px;
+     }
+     .youjiantou{
+      width: 30px;
+     }
+     .zhuce{
+      width: 280px;
+     }
+     .zhuanye{
+      width: 280px;
+     }
+     .gongjijin{
+      width: 280px;
+     }
+     .fuwu{
+      width: 270px;
+     }
+     .lansebeijing button{
+      width: 230px;
+      height: 50px;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      background: none;
+      color: #fff;
+      font-size: 20px;
+     }
+     .zuixinzixun{
+      height: 908px;
+      text-align: center;
+     }
+     .pthree{
+      font-size: 34px;
+      margin-bottom: 21px;
+      color: #333333;
+      padding-top: 56px;
+     }
+     .zuixintupian{
+      width: 256px;
+      height: 22px;
+      margin: 0px auto;
+     }
+     .xiaozhu{
+      width: 495px;
+      height: 293px;
+      margin-left: 234px;
+      padding-top: 40px;
+      float: left;
+     }
+     .jiaoyi{
+      width: 525px;
+      height: 293px;
+      float: left;
+      margin-left: 60px;
+      padding-top: 30px;
+      text-align: left;
+      margin-bottom: 0px;
+     }
+     .pjiaoyi{
+      padding-top: 38px;
+      margin-left: 2px;
+      font-size: 22px;
+      color: #333333;
+     }
+     .jiaoyi img{
+      margin-left: 2px;
+     }
+     .pwenzi{
+      margin-left: 2px;
+      line-height: 32px;
+      font-size: 14px;
+      color: #c0c0c0;
+      margin-bottom: 30px;
+     }
+     .jiaoyi button{
+      width: 140px;
+      height: 40px;
+      margin-left: 2px;
+      border:  1px solid #3d64b4;
+      border-radius: 20px;
+      background: none;
+      color: #3d64b4;
+     }
+     .jiaoyiwenzi{
+      width: 1061px;
+      height: 290px;
+      float: left;
+      margin: 90px 252px 0px;
+      background: 
+     }
+     .lieyi{
+      float: left;
+      margin-right: 40px;
+      height: 264px;
+     }
+     .lieer{
+      float: left;
+     }
+     .lieyi li{
+      height: 46px;
+      border-bottom: 1px dashed #dcdcdc;
+      font-size: 14px;
+      line-height: 33px;
+      color: #c8c8c8;
+     }
+     .lieer li{
+      height: 46px;
+      border-bottom: 1px dashed #dcdcdc;
+      font-size: 14px;
+      line-height: 33px;
+      color: #c8c8c8;
+     }
+     .lieyi .zhenshione{
+      border-bottom: none;
+     }
+     .lieer .zhenshitwo{
+      border-bottom: none;
+     }
+     .zhifu{
+      height: 102px;
+      background: #f5f5f5;
+     }
+     .navtwo{
+      height: 102px;
+      width: 1200px;
+      margin: 0px auto;
+     }
+     .navtwo li{
+      float: left;
+      height: 102px;
+      width: 300px;
+      background: url(./shuxiantwo.png) no-repeat right center;
+     }
+     .tuone{
+      float: left;
+      margin-left: 44px;
+      padding-top: 28px;
+     }
+     .tutwo{
+      float: left;
+      margin-left: 44px;
+      padding-top: 28px;
+     }
+     .tuthree{
+      float: left;
+      margin-left: 44px;
+      padding-top: 28px;
+     }
+     .tufour{
+      float: left;
+      margin-left: 44px;
+      padding-top: 28px;
+     }
+     .zione{
+      float: left;
+      width: 150px;
+      height: 42px;
+      padding-top: 31px;
+      margin-left: 23px;
+     }
+     .navtwo li .zione{
+      font-size: 13px;
+      line-height: 22px;
+      color: #686868;
+     }
+     .navtwo li .zione span{
+      font-size: 19px;
+     }
+     .last{
+      height: 387px;
+      background-color: #323232;
+      position: relative;
+     }
+     .zhongzhi{
+      width: 712px;
+      height: 29px;
+      background: none;
+      padding-top: 66px;
+      margin-left: 160px;
+     }
+     .zhongzhi li{
+      float: left;
+      width: 148px;
+      height: 29px;
+      color: #fff;
+      font-size: 18px;
+     }
+     .daliebiao{
+      width: 712px;
+      height: 99px;
+      background: none;
+      margin-left: 160px;
+      padding-top: 17px;
+     }
+     .daliebiao ul{
+      width: 148px;
+      height: 99px;
+      float: left;
+      color: #fff;
+      font-size: 14px;
+      line-height: 34px;
+     }
+     .saoyisao{
+      width: 236px;
+      height: 146px;
+      position: absolute;
+      top: 65px;
+      left: 800px;
+     }
+     .qie{
+      width: 206px;
+      height: 117px;
+      position: absolute;
+      top: 85px;
+      left: 1100px;
+     }
+     .lastdiv{
+      height: 43px;
+      text-align: center;
+      margin-top: 38px;
+      border-top: 1px solid #717171;
+     }
+     .lastdiv ul{
+      width: 850px;
+      height: 24px;
+      margin: 0px auto;
+      padding-top: 34px;
+      background: none;
+      color: #717171;
+      font-size: 14px;
+     }
+     .lastdiv ul li{
+      padding: 0px 14px;
+      border-right: 1px solid #717171;
+      float: left;
+     }
+     .lastdiv ul .falv{
+      border: none;
+     }
+     .lastwenzi{
+      position: absolute;
+      top: 332px;
+      left: 644px;
+     }
+   </style>
+ </head>
+     <div class="header">
+        <div class="logo">
+          <img src="./logo.png">
+        </div>
+        <ul class="nav">
+         <li>
+           <a href="">首页</a>
+         </li>
+         <li>
+           <a href="">关于我们</a>
+         </li>
+         <li>
+           <a href="">中智服务</a>
+         </li>
+         <li>
+           <a href="">解决方案</a>
+         </li>
+         <li>
+           <a href="">最新资讯</a>
+         </li>
+         <li class="wushuxian">
+           <a href="">联系我们</a>
+         </li>
+       </ul>
+     </div>
+     <div class="banner">
+     </div>
+     <div class="fuwuxiangmu">
+       <p>服务项目</p>
+       <img src="./yingwen.png">
+       <div class="fuwuneirong">
+         <div class="tupian">
+           <img src="./tupian.png">
+         </div>
+         <ul class="wenzi">
+           <li>工商代理</li>
+           <li>财务代理</li>
+           <li>资质服务</li>
+           <li>特色服务</li>
+         </ul>
+         <div class="wenzitwo">
+           <ul>
+             <li><img src="./yuandian.png">公司注册</li>
+             <li><img src="./yuandian.png">公司注册地址</li>
+             <li><img src="./yuandian.png">分公司注册</li>
+             <li><img src="./yuandian.png">外资注册</li>
+             <li><img src="./yuandian.png">股权变更</li>
+             <li><img src="./yuandian.png">公司注销</li>
+           </ul>
+           <ul>
+             <li><img src="./yuandian.png">代理记账</li>
+             <li><img src="./yuandian.png">税务筹划</li>
+             <li><img src="./yuandian.png">审计服务</li>
+           </ul>
+           <ul>
+             <li><img src="./yuandian.png">各类许可证</li>
+             <li><img src="./yuandian.png">资质审批</li>
+             <li><img src="./yuandian.png">高新企业</li>
+             <li><img src="./yuandian.png">商标专利</li>
+           </ul>
+         </div>
+         <div class="yuandian">
+           <img src="./yuandian.png">
+         </div>
+         <div class="tupiantwo">
+           <img src="./tupiantwo.png">
+         </div>
+       </div>
+       <ul class="wenzithree">
+           <li>公积金社保代理</li>
+           <li>办公室租赁</li>
+           <li>营业执照转让</li>
+           <li>法律服务</li>
+       </ul>
+     </div>
+     <div class="lansebeijing">
+       <p class="ptwo">解决问题</p>
+       <img src="./solution.png">
+       <ul class="blueneirong">
+         <li class="zuojiantou"><img src="zuojiantou.png"></li>
+         <li class="zhuce"><img src="zhuce.png"></li>
+         <li class="zhuanye"><img src="zhuanye.png"></li>
+         <li class="gongjijin"><img src="gongjijin.png"></li>
+         <li class="fuwu"><img src="fuwu.png"></li>
+         <li class="youjiantou"><img src="youjiantou.png"></li>
+       </ul>
+       <button>了解更多>></button>
+     </div>
+     <div class="zuixinzixun">
+       <p class="pthree">最新资讯</p>
+       <div class="zuixintupian"><img src="./zuixinzixun.png"></div>
+       <div class="xiaozhu">
+         <img src="./xiaozhu.png">
+       </div>
+       <div class="jiaoyi">
+         <div class="pjiaoyi">交易明智&方便</div>
+         <img src="./chang.png">
+         <div class="pwenzi">要适应快速发展的差价和约市场,客户需要一个能让他们不用经纪商的介入就能分<br/>析实时报价、进行实时交易以及应用投资策略的平台。
+          他们需要一个简单便捷的界<br/>面来管理他们的账户,并能轻松查看图标和报告。</div>
+         <button>了解详情</button>
+       </div>
+       <div class="jiaoyiwenzi">
+         <ul class="lieyi">
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li class="zhenshione">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+         </ul>
+         <ul class="lieer">
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+           <li class="zhenshitwo">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</li>
+         </ul>
+       </div>
+     </div>
+     <div class="zhifu">
+       <ul class="navtwo">
+         <li>
+           <div class="tuone"><img src="./tuone.png"></div>
+           <div class="zione"><span>资质认证</span><br/>服务商100%实名认证</div>
+         </li>
+         <li>
+           <div class="tutwo"><img src="./tutwo.png"></div>
+           <div class="zione"><span>支付安全</span><br/>明码标价支付及信息安全</div>
+         </li>
+         <li>
+           <div class="tuthree"><img src="tuthree.png"></div>
+           <div class="zione"><span>保险赔付</span><br/>为您提供担保赔付</div>
+         </li>
+         <li>
+           <div class="tufour"><img src="tufour.png"></div>
+           <div class="zione"><span>售后无忧</span><br/>服务出问题经理全程跟进</div>
+         </li>
+       </ul>
+     </div>
+     <div class="last">
+       <ul class="zhongzhi">
+         <li>中智信元</li>
+         <li>订单服务</li>
+         <li>售后服务</li>
+         <li>常见问题</li>
+       </ul>
+       <div class="daliebiao">
+         <ul>
+           <li>加入我们</li>
+           <li>联系我们</li>
+           <li>最新动态</li>
+         </ul>
+         <ul>
+           <li>支付方式</li>
+           <li>退款说明</li>
+           <li>购买流程</li>
+         </ul>
+         <ul>
+           <li>在线问答</li>
+           <li>服务中心</li>
+           <li>售后政策</li>
+         </ul>
+         <ul>
+           <li>新手帮助</li>
+           <li>支付帮助</li>
+           <li>开具发票</li>
+         </ul>
+       </div>
+       <div class="saoyisao">
+         <img src="./erweima.png">
+       </div>
+       <div class="qie">
+         <img src="./qq.png">
+       </div>
+       <div class="lastdiv">
+         <ul>
+           <li>首页</li>
+           <li>工商代理</li>
+           <li>财务代记账</li>
+           <li>股权交易与变更</li>
+           <li>企业贷款</li>
+           <li>办公室租赁</li>
+           <li>社保公积金代理</li>
+           <li class="falv">法律服务</li>
+         </ul>
+       </div>
+       <div class="lastwenzi">
+       <img src="./lastwenzi.png">
+       </div>
+     </div>
+ </body>
+</html> 
